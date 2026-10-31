@@ -1,0 +1,13 @@
+.git
+.gitignore
+.run
+tools
+_backup_sprites_original
+*.log
+*.pid
+*.docx
+*.jpeg
+*.jpg
+*.png
+PUBLIC_TUNNEL.md
+

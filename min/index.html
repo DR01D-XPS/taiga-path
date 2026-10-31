@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Таежный Путь: Визуальная Новелла">
+  <meta property="og:title" content="Таежный Путь: Визуальная Новелла">
+  <meta property="og:description" content="Таежный Путь: Визуальная Новелла">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <title>Таежный Путь: Визуальная Новелла</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=20260921-min1">
+</head>
+<body>
+  <main id="vnRoot" class="vn-root" aria-label="Визуальная новелла">
+    <div id="bgLayerA" class="bg-layer is-active"></div>
+    <div id="bgLayerB" class="bg-layer"></div>
+    <div class="scene-vignette"></div>
+    <header class="hud">
+      <div class="hud-brand">
+        <div class="hud-logos" aria-hidden="true">
+          <img class="hud-logo hud-logo--mp" src="optimized/ui/logo-mp.svg" alt="">
+          <img class="hud-logo hud-logo--so" src="optimized/ui/logo-so.png" alt="">
+        </div>
+        <div class="hud-title-lockup">
+          <h1 class="hud-title">Таежный путь</h1>
+          <span class="hud-unity-mark" aria-hidden="true">
+            <img class="hud-unity-logo" src="optimized/ui/logo-unity-2026.png" alt="">
+          </span>
+        </div>
+      </div>
+      <div class="hud-actions">
+        <div id="scoreBadge" class="score-badge">Гармония: 0/30</div>
+        <button id="backButton" class="back-button" type="button">Назад</button>
+      </div>
+    </header>
+    <section class="character-stage" aria-hidden="true">
+      <img id="characterSprite" alt="">
+    </section>
+    <div class="story-dock">
+      <section id="dialogueBox" class="dialogue-box" tabindex="0" aria-live="polite">
+        <div id="nameplate" class="nameplate"></div>
+        <p id="dialogueText" class="dialogue-text"></p>
+      </section>
+      <section id="choiceBox" class="choice-box" aria-live="polite" inert>
+        <p id="choiceQuestion" class="choice-question"></p>
+        <div id="choiceList" class="choice-list"></div>
+      </section>
+    </div>
+    <section id="endingCard" class="ending-card" aria-live="polite" inert>
+      <div class="ending-card__panel">
+        <p id="endingKicker" class="ending-card__kicker"></p>
+        <h2 id="endingTitle" class="ending-card__title"></h2>
+        <p id="endingBody" class="ending-card__body"></p>
+        <div id="endingLinks" class="ending-card__links"></div>
+      </div>
+    </section>
+  </main>
+  <script src="data/assets.js?v=20260921-min1"></script>
+  <script src="data/scenario.js?v=20260921-min1"></script>
+  <script src="layout.js?v=20260921-min1"></script>
+  <script src="js/app.js?v=20260921-min1"></script>
+</body>
+</html>
